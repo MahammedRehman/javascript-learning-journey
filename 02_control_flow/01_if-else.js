@@ -148,40 +148,63 @@
 
 
 // Taking UserInput
-const readline = require('readline').promises; // Loads the Node.js built-in module which reads from the terminal
-const rl = readline.createInterface({ // Create connection between your code and terminal
-  input: process.stdin,   // Take input from keyboard
-  output: process.stdout  // Show output on screen 
-});
+// const readline = require('readline').promises; // Loads the Node.js built-in module which reads from the terminal
+// const rl = readline.createInterface({ // Create connection between your code and terminal
+//   input: process.stdin,   // Take input from keyboard
+//   output: process.stdout  // Show output on screen 
+// });
 
-async function main() {
+// async function main() {
 
- let correctUsername = "Rehman"
-let correctpassword = "124"
+//  let correctUsername = "Rehman"
+// let correctpassword = "124"
 
-let userName = await rl.question("Enter your name: ");
-let password = await rl.question("Enter your password: ");
+// let userName = await rl.question("Enter your name: ");
+// let password = await rl.question("Enter your password: ");
 
-if(correctUsername === userName && correctpassword === password){
-    console.log("Login Successful");
-}
-else if(userName === ""){
-    console.log("Name fiels cannot be empty");
+// if(correctUsername === userName && correctpassword === password){
+//     console.log("Login Successful");
+// }
+// else if(userName === ""){
+//     console.log("Name fiels cannot be empty");
+    
+// }
+// else if(password === ""){
+//     console.log("Please enter password");
+    
+// }
+// else{
+//     console.log("Wrong Credetinals");
+    
+// }
+
+//   rl.close(); // Close the connection
+// }
+
+// main(); 
+
+
+
+// Triangle Type
+const side1 = 12
+const side2 = 12
+const side3 = 12
+
+if(side1 === side2 && side2 === side3){
+    console.log("Equal Sides");
     
 }
-else if(password === ""){
-    console.log("Please enter password");
+else if(side1 === side2 || side2 === side3 || side3 === side1){
+    console.log("Two Equal Sides");
     
 }
 else{
-    console.log("Wrong Credetinals");
+    console.log("All Different");
     
 }
 
-  rl.close(); // Close the connection
-}
 
-main(); 
+
 
 
 
