@@ -1,6 +1,5 @@
 // const table = 2;
 
-const { log } = require('console');
 
 // For Loop--------------
 
