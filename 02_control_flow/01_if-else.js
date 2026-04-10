@@ -186,22 +186,78 @@
 
 
 // Triangle Type
-const side1 = 12
-const side2 = 12
-const side3 = 12
+// const side1 = 12
+// const side2 = 12
+// const side3 = 12
 
-if(side1 === side2 && side2 === side3){
-    console.log("Equal Sides");
+// if(side1 === side2 && side2 === side3){
+//     console.log("Equal Sides");
     
-}
-else if(side1 === side2 || side2 === side3 || side3 === side1){
-    console.log("Two Equal Sides");
+// }
+// else if(side1 === side2 || side2 === side3 || side3 === side1){
+//     console.log("Two Equal Sides");
     
+// }
+// else{
+//     console.log("All Different");
+    
+// }
+
+
+
+// Electricity Bill
+// let units = 121
+// let electricityBill = 0
+
+// if(units<=100){
+//     electricityBill = units * 5
+// }
+// else if (units>100 || units<=200){
+//     electricityBill = units * 7
+// }
+// else if(units>200){
+//     electricityBill = units * 10
+// }
+// else{
+//     console.log("Invalid Units");
+    
+// }
+
+// console.log("Your last month electricity bill is " + electricityBill);
+
+
+
+
+// Discount System
+// Discount Logic -> discount price = base price × (100 − discount percent) / 100
+const purchaseAmount = 2000
+let amountAfterDiscount = 0
+
+if(purchaseAmount>=5000){
+    amountAfterDiscount = purchaseAmount * (100 - 20) / 100
 }
+else if(purchaseAmount>=2000){
+    amountAfterDiscount = purchaseAmount * (100 - 10) / 100
+}
+// else if(purchaseAmount>=1500 || purchaseAmount <2000){
+//     console.log("Purchase more to get 10% discount");
+    
+// }
+// else if(purchaseAmount>=4500 || purchaseAmount <5000){
+//     console.log("Purchase more to get 20% discount");
+    
+// }
 else{
-    console.log("All Different");
+    console.log("No Disount for this purchase");
     
 }
+
+console.log("Original Amount: " + purchaseAmount);
+console.log("After Discount: " + amountAfterDiscount);
+
+
+
+
 
 
 
